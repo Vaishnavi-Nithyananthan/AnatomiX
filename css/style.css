@@ -157,6 +157,13 @@ h2{
   margin: 0 0 40px 0;
 }
 
+#design .content_1{
+  gap: 45px;
+}
+#design .content_2{
+  gap: 45px;
+}
+
 @media (max-width: 768px) {
   #design .row {
     gap: 15px;  /* Reduced gap for mobile */
@@ -337,6 +344,9 @@ color:#333 ;
     }
     #section-bg .content p {
         font-size: 1rem; /* Smaller text for mobile screens */
+    }
+    #section-bg .content h3{
+      font-size: 1rem;
     }
   }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -837,32 +847,43 @@ body.mobile-nav-active #mobile-nav-toggle {
     border-right: 1px solid #fff;
   }
 }
-
 #bg-image {
-  /* background-image: url("C:/Users/Vaishnavi/Desktop/projects/AnatomiX/img/111.JPG"); */
-  display: flex;
-  flex-direction: column;  /* Stack header and image vertically */
-  justify-content: center;
-  align-items: center;
-  height: 100vh;  /* Full viewport height */
-  padding: 40px;  /* Add some space around the content */
-  text-align: center;
+  margin-bottom: 30px;
 }
+#bg-image .container{
+  position: relative;
+  width: 100%;
+}
+#bg-image h3{
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+/* #bg-image {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+} */
 #bg-image button{
-  margin-top: 200px;
-  padding: 10px 20px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   border: none;
   border-radius: 5px;
+  padding: 15px 30px; /* Adds space inside the button */
+  width: 200px;  /* Sets a fixed width */
+  position: absolute;
+  top: 80%; /* Adjust this to move the button */
+  left: 50%; /* Adjust this to move the button */
+  transform: translate(-50%, -50%);
 }
 .bg-image img { 
   max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 #bg-image a{
   color: #fff;
@@ -870,32 +891,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 80px;
 }
 
-#bg-image h3{
-  color: #000;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
 @media (max-width: 768px) {
   #bg-image {
-    background-image: url("C:/Users/Vaishnavi/Desktop/projects/AnatomiX/img/shop3.JPG"); /* New mobile background */
+    /* background-image: url("C:/Users/Vaishnavi/Desktop/projects/AnatomiX/img/shop3.JPG"); New mobile background */
     background-size: contain;  /* Ensure full image is shown */
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh; /* Full height */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    margin-bottom: 20px;
   }
 
   #bg-image button {
     background-color: rgba(0, 0, 0, 0.8); /* White background */
     color: #fff; /* Black text */
     border: 1px solid #000; /* Optional: Add a border */
-    margin-top: 300px;
     text-decoration: None;
+    top: 70%; /* Adjust this to move the button */
+    left: 50%; /* Adjust this to move the button */
+    transform: translate(-50%, -50%);
   }
 
   #bg-image a {
